@@ -8,43 +8,74 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 flex justify-center py-24">
+      <main className="min-h-screen bg-gradient-to-b from-geist-50 to-geist-100 flex justify-center py-24">
         <div>
-          <h1 className="text-6xl font-bold mt-12 text-center leading-tight">
+          <h1
+            className="font-bold mt-20 text-center leading-tight tracking-tight"
+            style={{ fontSize: "72px" }}
+          >
             Next.js Template.
             <br />
             Advanced Starter.
           </h1>
 
-          <h2 className="text-gray-700 text-center text-2xl mt-6">
-            Don't setup a tech stack twice, use this template and get developing
-            instantly.
+          <h2 className="mt-3 max-w-4xl mx-auto text-center text-gray-600 text-base sm:text-2xl md:mt-5 md:text-2xl tracking-tight">
+            Open source Next.js template for busy devs: keep setups DRY. It's
+            2020, no need to config absolute-imports, code-formatting & linting.
           </h2>
 
-          <div
-            className="bg-white rounded-lg shadow-xl mt-12 grid grid-cols-2"
-            style={{ width: "1000px" }}
+          <section
+            className="bg-white rounded-lg mt-12 grid grid-cols-2"
+            style={{
+              width: "1000px",
+              minHeight: "350px",
+              boxShadow: "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
+            }}
           >
-            <FeatureList>
-              <Feature text="Tailwind CSS (with auto purge)" />
-              <Feature text="TypeScript config" />
-              <Feature text="Eslint" />
-              <Feature text="Prettier" />
-              <Feature text="Inter Font" />
-            </FeatureList>
-            <div className="place-self-center">
-              <h3 className="text-xl font-semibold">Copy Template now</h3>
+            <div className="flex flex-col justify-center bg-gray-50 rounded-l-lg">
+              <FeatureList>
+                <Feature>
+                  Fast design workflow with <InfoText text="Tailwind CSS" />
+                </Feature>
+                <Feature>
+                  <InfoText text="TypeScript rules" /> that make sense
+                </Feature>
+                <Feature>
+                  Customizable <InfoText text="ESLint config" />
+                </Feature>
+                <Feature>
+                  <InfoText text="Auto code formatting" /> with Prettier
+                </Feature>
+                <Feature>
+                  Beautiful <InfoText text="Inter font" />
+                </Feature>
+                <Feature>
+                  Standardized <InfoText text="absolute imports" />{" "}
+                </Feature>
+                {/* <Feature text="TypeScript config" />
+                <Feature text="ESLint config" />
+                <Feature text="Prettier" />
+                <Feature text="Inter Font" /> */}
+              </FeatureList>
+            </div>
+
+            <div className="place-self-center text-center space-y-5">
+              <h3 className="text-3xl font-bold">Get it 👇</h3>
 
               <span className="inline-flex rounded-md shadow-sm">
                 <button
                   type="button"
-                  className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                  className="inline-flex items-center px-10 py-4 border border-transparent text-base leading-6 rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
                 >
-                  Copy Template
+                  Copy Template from GitHub
                 </button>
               </span>
+
+              <h2 className="text-gray-600 tracking-tight">
+                Used by devs around the world
+              </h2>
             </div>
-          </div>
+          </section>
         </div>
       </main>
     </div>
@@ -55,22 +86,30 @@ interface FeatureListProps {
   children: React.ReactNode;
 }
 function FeatureList({ children }: FeatureListProps) {
-  return <ul className="space-y-4 bg-gray-50 p-8 rounded-l-lg">{children}</ul>;
+  return <ul className="space-y-5 px-12  py-12">{children}</ul>;
 }
 
-function Feature({ text }) {
+function Feature({ children }) {
   return (
     <li className="flex items-center">
-      <CheckIcon className="w-5 h-5 p-0.5 rounded-full flex-shrink-0 text-gray-100 bg-blue-500" />
-      <p className="ml-3 text-gray-800 text-lg">{text}</p>
+      <CheckIcon className="w-5 h-5 p-1 rounded-full flex-shrink-0 text-gray-100 bg-blue-600" />
+      <p className="ml-3 text-gray-600 text-lg">{children}</p>
     </li>
+  );
+}
+
+function InfoText({ text }) {
+  return (
+    <span className="text-gray-700 font-medium bg-geist-100 rounded-md py-2 px-3">
+      {text}
+    </span>
   );
 }
 
 function DarkModal({ children }) {
   return (
     <div
-      className="max-w-4xl p-8 space-y-6 transition-all transform border rounded-lg shadow-lg bg-dark-800 border-dark-900"
+      className="max-w-4xl p-8 space-y-6 transition-all transform border rounded-lg bg-dark-800 border-dark-900"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline"
