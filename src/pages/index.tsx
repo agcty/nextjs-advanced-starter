@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-b from-geist-50 to-geist-100 flex justify-center py-24">
+      <main className="min-h-screen bg-gradient-to-b from-geist-50 via-geist-50 to-geist-100 flex justify-center py-24">
         <div>
           <h1
             className="font-bold mt-20 text-center leading-tight tracking-tight"
@@ -26,14 +26,14 @@ export default function Home() {
           </h2>
 
           <section
-            className="bg-white rounded-lg mt-12 grid grid-cols-2"
+            className="bg-white rounded-lg mt-20 grid grid-cols-2"
             style={{
               width: "1000px",
               minHeight: "350px",
               boxShadow: "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
             }}
           >
-            <div className="flex flex-col justify-center bg-gray-50 rounded-l-lg">
+            <div className="flex flex-col justify-center bg-geist-50 rounded-l-lg">
               <FeatureList>
                 <Feature>
                   Fast design workflow with <InfoText text="Tailwind CSS" />
