@@ -33,13 +33,6 @@ module.exports = {
       { ignorePureComponents: truncateSync },
     ],
     "react/jsx-filename-extension": [1, { extensions: [".ts", ".tsx"] }],
-    "react/self-closing-comp": [
-      "error",
-      {
-        component: false,
-        html: false,
-      },
-    ],
     "import/extensions": "off",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": ["error", { custom: "ignore" }],
