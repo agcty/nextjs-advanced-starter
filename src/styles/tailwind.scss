@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@tailwind base;
+
+// reset ios styling
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+/* purgecss start ignore */
+html {
+  @apply antialiased;
+}
