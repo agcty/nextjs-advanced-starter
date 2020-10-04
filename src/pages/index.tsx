@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,12 +64,14 @@ export default function Home() {
               <h3 className="text-3xl font-bold">Get it 👇</h3>
 
               <span className="inline-flex rounded-md shadow-sm">
-                <button
-                  type="button"
-                  className="inline-flex items-center px-10 py-4 border border-transparent text-base leading-6 rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
-                >
-                  Copy Template from GitHub
-                </button>
+                <Link href="  https://github.com/agcty/nextjs-advanced-starter">
+                  <a
+                    type="button"
+                    className="inline-flex items-center px-10 py-4 border border-transparent text-base leading-6 rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+                  >
+                    Copy Template from GitHub
+                  </a>
+                </Link>
               </span>
 
               <h2 className="text-gray-600 tracking-tight">
