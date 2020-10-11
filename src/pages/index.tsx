@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -50,10 +51,6 @@ export default function Home() {
                   <Feature>
                     Standardized <InfoText text="absolute imports" />{" "}
                   </Feature>
-                  {/* <Feature text="TypeScript config" />
-                <Feature text="ESLint config" />
-                <Feature text="Prettier" />
-                <Feature text="Inter Font" /> */}
                 </FeatureList>
               </div>
 
@@ -79,6 +76,13 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <style jsx>
+        {`
+          .test {
+            @apply bg-red-500;
+          }
+        `}
+      </style>
     </div>
   );
 }
@@ -86,6 +90,7 @@ export default function Home() {
 interface FeatureListProps {
   children: React.ReactNode;
 }
+
 function FeatureList({ children }: FeatureListProps) {
   return <ul className="px-12 py-12 space-y-5">{children}</ul>;
 }

@@ -1,41 +1,31 @@
 {
-    "presets": [
-      [
-        "next/babel",
-        {
-          "styled-jsx": {
-            "plugins": ["styled-jsx-plugin-postcss"]
-          }
+  "presets": ["next/babel"],
+  "plugins": [
+    "inline-react-svg",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./src/components",
+          "@assets": "./src/assets",
+          "@api": "./src/api",
+          "@models": "./src/models",
+          "@screens": "./src/screens",
+          "@hooks": "./src/hooks",
+          "@services": "./src/services",
+          "@constants": "./src/constants.ts",
+          "@context": "./src/context",
+          "@queries": "./src/queries",
+          "@data": "./src/data",
+          "@typeDefs": "./src/types",
+          "@generated": "./src/generated",
+          "@utils": "./src/utils",
+          "@app": "./src/app",
+          "@reducers": "./src/reducers",
+          "@public": "./public"
         }
-      ]
-    ],
-    "plugins": [
-      "inline-react-svg",
-      [
-        "module-resolver",
-        {
-          "root": ["./"],
-          "alias": {
-            "@components": "./src/components",
-            "@assets": "./src/assets",
-            "@api": "./src/api",
-            "@models": "./src/models",
-            "@screens": "./src/screens",
-            "@hooks": "./src/hooks",
-            "@services": "./src/services",
-            "@constants": "./src/constants.ts",
-            "@context": "./src/context",
-            "@queries": "./src/queries",
-            "@data": "./src/data",
-            "@typeDefs": "./src/types",
-            "@generated": "./src/generated",
-            "@utils": "./src/utils",
-            "@app": "./src/app",
-            "@reducers": "./src/reducers",
-            "@public": "./public"
-          }
-        }
-      ]
+      }
     ]
-  }
-  
+  ]
+}

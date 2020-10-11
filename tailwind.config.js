@@ -1,42 +1,21 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./src/**/*.tsx"],
   theme: {
-    // todo add default line height https://tailwindcss.com/docs/font-size#app
-    fontSize: {
-      xs: ".75rem",
-      sm: ".875rem",
-      tiny: ".875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "4rem",
-      "7xl": "5rem",
-    },
+    // good to know: add default line height https://tailwindcss.com/docs/font-size#app
     extend: {
-      screens: {
-        xxl: { min: "2000px" },
-      },
-      width: {
-        1000: "1000px",
-      },
-      fontSize: {
-        ...defaultTheme.fontSize,
-        xxs: "0.65rem",
-      },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        // custom light-gray tones
         geist: {
           50: "#fafafa",
           100: "#eaeaea",
         },
+        // custom dark scheme
         dark: {
           1100: "#212121",
           1000: "#2B2B2B",
@@ -49,18 +28,6 @@ module.exports = {
           300: "#D9D9D9",
           200: "#ebebeb",
           100: "#FFFFFF",
-        },
-        primary: {
-          50: "#f7f8ff",
-          100: "#F0F2FE",
-          200: "#DAE0FC",
-          300: "#C4CDFB",
-          400: "#97A7F7",
-          500: "#6B81F4",
-          600: "#6074DC",
-          700: "#404D92",
-          800: "#303A6E",
-          900: "#202749",
         },
       },
       typography: (theme) => ({
@@ -115,13 +82,10 @@ module.exports = {
       "even",
     ],
   },
-  plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")],
-
-  experimental: {
-    applyComplexClasses: true,
-  },
-
+  // eslint-disable-next-line global-require
+  plugins: [require("@tailwindcss/typography")],
   future: {
     removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
 };

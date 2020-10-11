@@ -1,5 +1,3 @@
-const { truncateSync } = require("fs");
-
 module.exports = {
   env: {
     browser: true,
@@ -28,10 +26,6 @@ module.exports = {
     "prettier/react",
   ],
   rules: {
-    "react/prefer-stateless-function": [
-      "2",
-      { ignorePureComponents: truncateSync },
-    ],
     "react/jsx-filename-extension": [1, { extensions: [".ts", ".tsx"] }],
     "import/extensions": "off",
     "react/prop-types": "off",
@@ -45,6 +39,9 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": "off",
     "import/no-cycle": [0, { ignoreExternal: true }],
     "prefer-const": "off",
+    // needed because of https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md#how-to-use
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
   },
   settings: {
     "import/resolver": {
