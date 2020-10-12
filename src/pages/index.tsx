@@ -33,23 +33,23 @@ export default function Home() {
             >
               <div className="flex flex-col justify-center rounded-l-lg bg-geist-50">
                 <FeatureList>
-                  <Feature>
+                  <Feature main="Tailwind CSS">
                     Fast design workflow with <InfoText text="Tailwind CSS" />
                   </Feature>
-                  <Feature>
+                  <Feature main="TypeScript">
                     <InfoText text="TypeScript" /> rules that make sense
                   </Feature>
-                  <Feature>
+                  <Feature main="ESLint config">
                     Customizable <InfoText text="ESLint config" />
                   </Feature>
-                  <Feature>
-                    <InfoText text="Auto code formatting" /> with Prettier
+                  <Feature main="Code formatting">
+                    <InfoText text="Code formatting" /> with Prettier
                   </Feature>
-                  <Feature>
+                  <Feature main="Inter font">
                     Beautiful <InfoText text="Inter font" />
                   </Feature>
-                  <Feature>
-                    Standardized <InfoText text="absolute imports" />{" "}
+                  <Feature main="Absolute imports">
+                    Standardized <InfoText text="absolute imports" />
                   </Feature>
                 </FeatureList>
               </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   <Link href="  https://github.com/agcty/nextjs-advanced-starter">
                     <a
                       type="button"
-                      className="inline-flex items-center px-10 py-4 text-base leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                      className="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                     >
                       Copy Template from GitHub
                     </a>
@@ -95,19 +95,23 @@ function FeatureList({ children }: FeatureListProps) {
   return <ul className="px-12 py-12 space-y-5">{children}</ul>;
 }
 
-function Feature({ children }) {
+function Feature({ children, main }) {
   return (
-    <li className="flex items-center leading-relaxed">
-      <CheckIcon className="flex-shrink-0 w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full" />
-      <p className="ml-3 text-lg text-gray-600">{children}</p>
+    <li className="flex items-center">
+      <CheckIcon className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden" />
+      <p className="hidden ml-3 text-lg text-gray-600 sm:inline">{children}</p>
+
+      <p className="mx-auto sm:hidden">
+        <InfoText text={main} />
+      </p>
     </li>
   );
 }
 
 function InfoText({ text }) {
   return (
-    <span className="flex items-center px-3 py-2 font-medium text-gray-700 rounded-md bg-geist-100 gap-x-2">
-      <CheckIcon className="flex-shrink-0 w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:hidden" />
+    <span className="inline-flex items-center px-3 py-2 font-medium text-gray-700 rounded-md bg-geist-100">
+      <CheckIcon className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden" />
       {text}
     </span>
   );
