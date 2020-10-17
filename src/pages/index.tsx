@@ -12,15 +12,15 @@ export default function Home() {
 
       <main className="flex justify-center min-h-screen py-24 bg-gradient-to-b from-geist-50 via-geist-50 to-geist-100">
         <div>
-          <h1 className="px-5 text-4xl font-bold leading-none tracking-tight text-center sm:mt-20 sm:leading-tight sm:text-6xl">
-            Next.js Template.
+          <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
+            Next.js
             <br />
-            Advanced Starter.
+            Advanced Starter
           </h1>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
-            Open source Next.js template for busy devs: keep setups DRY. It's
-            2020, no need to config absolute-imports, code-formatting & linting.
+            Tailwind css, eslint, prettier & absolute imports instantly. No
+            additional config needed - easily extendable.
           </h2>
 
           <div className="px-4 sm:px-0">
@@ -76,13 +76,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <style jsx>
-        {`
-          .test {
-            @apply bg-red-500;
-          }
-        `}
-      </style>
     </div>
   );
 }
