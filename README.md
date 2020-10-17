@@ -1,30 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs Advanced Starter
 
-## Getting Started
+An opinionated starter skeleton with advanced features for Next.js. 
 
-First, run the development server:
+Use tailwind css, eslint, prettier & absolute imports instantly. Easily extendable zero-config template for pros and beginners.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Why?
+This project aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It combines some of the best trending features and gives you a comfortable development environment to get started.
+The reason why it exists is because I absolutely hate setting up the same stack twice. Especially getting eslint + prettier + absolute imports to work (well) together is super annoying and I don't any people to be annoyed by it.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+most tedious things are usually the easiest ones to implement (once you know what you're doing).
+If you've ever set up an eslint config with auto-formatting and absolute imports for a new project from scratch you probably know the struggle.
 
-## Learn More
+For Pros: You don't have to copy the same config over to a new project.
+For Beginners: Start coding like the pros without setting up configs for days.
 
-To learn more about Next.js, take a look at the following resources:
+## How can I use this?
+If you are a newcomer to Next.js who's interested in the features a lot pros use, this is a great place to start without worrying about errors.
+If you are pro and interested in a base-templat for building ultra-fast websites, you can use this project as a "minimal" starter.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Demo website.](https://nextjs-advanced-starter.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Features
+ * Fast design workflow with Tailwind CSS
+   * unused classes are purged automatically = really small css bundle size
+ * TypeScript rules that make sense
+ * Customizable ESLint config
+   * AirBnB code guidelines + prettier rules
+ * Code formatting with Prettier
+   * Get auto-formatted code whenever you hit save
+ * Beautiful Inter font
+   * Really good looking apple-like open source font.
+ * Standardized absolute imports
+   * Just import from @components/MyComp instead of ../../components/MyComp
