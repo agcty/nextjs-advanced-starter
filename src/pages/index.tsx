@@ -19,8 +19,8 @@ export default function Home() {
           </h1>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
-            Tailwind css, eslint, prettier & absolute imports instantly. No
-            additional config needed - easily extendable.
+            Use tailwind css, eslint, prettier & absolute imports instantly.
+            Easily extendable zero-config template for pros and beginners.
           </h2>
 
           <div className="px-4 sm:px-0">
