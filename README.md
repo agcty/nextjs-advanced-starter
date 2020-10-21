@@ -2,12 +2,19 @@
 
 An opinionated starter skeleton with advanced features for Next.js. 
 
-Use tailwind css, eslint, prettier & absolute imports instantly. Easily extendable zero-config template for pros and beginners.
+Use tailwind css, eslint, prettier & absolute imports instantly.
+Easily extendable zero-config template for pros and beginners.
 
 ## Why?
 This project aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-It combines some of the best trending features and gives you a comfortable development environment to get started.
+I always felt like there are so many templates and tutorials about configuring stacks that just don't work. No matter what you do. This is the template that **just works**.
+
+TLDR;
+This template combines some of the most exciting trends in web development and just works. Use it as a pro and don't.
+Check out the [Features 🎁](#features)
+
+This template of the most exciting trends features and gives you a comfortable development environment to get started.
 The reason why it exists is because I absolutely hate setting up the same stack twice. Especially getting eslint + prettier + absolute imports to work (well) together is super annoying and I don't any people to be annoyed by it.
 
 most tedious things are usually the easiest ones to implement (once you know what you're doing).
@@ -17,20 +24,25 @@ For Pros: You don't have to copy the same config over to a new project.
 For Beginners: Start coding like the pros without setting up configs for days.
 
 ## How can I use this?
-If you are a newcomer to Next.js who's interested in the features a lot pros use, this is a great place to start without worrying about errors.
-If you are pro and interested in a base-templat for building ultra-fast websites, you can use this project as a "minimal" starter.
+If you're a newcomer to Next.js or React and you're interested in the most exciting features in web development, this is a great place to start without worrying about configuring rules, code-formatting, css purging etc. You can figure that out later, just get developing and build things people love.
+
+If you're already a pro, this is the base-template for you. It's incredibly easy to extend or reconfigure. It's deliberately kept small so it stays performant while you build on top of it. This is the minimal base-template I wish I've had when I started developing with React.
 
 [Demo website.](https://nextjs-advanced-starter.vercel.app/)
 
 ## Features
  * Fast design workflow with Tailwind CSS
+   * write css like the cool kids
    * unused classes are purged automatically = really small css bundle size
- * TypeScript rules that make sense
+ * TypeScript
+   * #1 must have in any web-dev project
  * Customizable ESLint config
    * AirBnB code guidelines + prettier rules
  * Code formatting with Prettier
-   * Get auto-formatted code whenever you hit save
- * Beautiful Inter font
+   * Code is auto-formatted
+   * No config needed (seriously, no config)
+ * Inter font
    * Really good looking apple-like open source font.
+   * Don't like it? just replace two strings
  * Standardized absolute imports
    * Just import from @components/MyComp instead of ../../components/MyComp
