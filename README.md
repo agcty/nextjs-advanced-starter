@@ -1,11 +1,12 @@
 # Nextjs Advanced Starter
 
-An opinionated starter skeleton with advanced features for Next.js. 
+An opinionated starter skeleton with advanced features for Next.js.
 
 Use tailwind css, eslint, prettier & absolute imports instantly.
 Easily extendable zero-config template for pros and beginners.
 
 ## Why?
+
 This project aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
 It feels like there are so many templates and tutorials about configuring stacks out there, that just don't work, no matter what you do. When I started This is the template that **just works**.
@@ -24,6 +25,7 @@ For Pros: You don't have to copy the same config over to a new project.
 For Beginners: Start coding like the pros without setting up configs for days.
 
 ## How can I use this?
+
 If you're a newcomer to Next.js or React and you're interested in the most exciting features in web development, this is a great place to start without worrying about configuring rules, code-formatting, css purging etc. You can figure that out later, just get developing and build things people love.
 
 If you're already a pro, this is the base-template for you. It's incredibly easy to extend or reconfigure. It's deliberately kept small so it stays performant while you build on top of it. This is the minimal base-template I wish I've had when I started developing with React.
@@ -31,29 +33,57 @@ If you're already a pro, this is the base-template for you. It's incredibly easy
 [Demo website.](https://nextjs-advanced-starter.vercel.app/)
 
 ## Features
- * Fast design workflow with Tailwind CSS
-   * write css like the cool kids
-   * unused classes are purged automatically = really small css bundle size
- * TypeScript
-   * #1 must have in any web-dev project
- * Customizable ESLint config
-   * AirBnB code guidelines + prettier rules
- * Code formatting with Prettier
-   * Code is auto-formatted
-   * No config needed (seriously, no config)
- * Inter font
-   * Really good looking apple-like open source font.
-   * Don't like it? just replace two strings
- * Standardized absolute imports
-   * Just import from @components/MyComp instead of ../../components/MyComp
-   
-   
+
+- Fast design workflow with Tailwind CSS
+  - write css like the cool kids
+  - unused classes are purged automatically = really small css bundle size
+- TypeScript
+  - #1 must have in any web-dev project
+- Customizable ESLint config
+  - AirBnB code guidelines + prettier rules
+- Code formatting with Prettier
+  - Code is auto-formatted
+  - No config needed (seriously, no config)
+- Inter font
+  - Really good looking apple-like open source font.
+  - Don't like it? just replace two strings
+- Standardized absolute imports
+  - Just import from @components/MyComp instead of ../../components/MyComp
+
 ## Explanation why some dependencies are in this template
+
 ### @tailwindcss/ui
+
 You need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/), it adds new spacing values, improved colors and beautiful shadows and will as [@adamwathan](https://twitter.com/adamwathan) pointed out, it will make its way into the core library soon. Once this happens, the dependency will be removed. ![tailwind ui](https://i.imgur.com/gm83Ydx.png)
 
+### @tailwindcss/typography
+
+A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults. Just add the class "prose" to
+
+This html
+
+```
+<article class="prose lg:prose-xl">
+  <h1>Garlic bread with cheese: What the science tells us</h1>
+  <p>
+    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+    children, with the food earning such an iconic status in our culture that kids will often dress
+    up as warm, cheesy loaf for Halloween.
+  </p>
+  <p>
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
+  <!-- ... -->
+</article>
+```
+
+will be rendered like this:
 
 ## Extending the template
+
 ### Changing the font
+
 ### Configuring ESLint rules
+
 ### Adding new absolute import paths
