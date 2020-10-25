@@ -16,6 +16,7 @@ Go check out the [Features 🎁](#features)!
 ## Who this template is for
 
 **TLDR**
+
 For Pros: You don't have to copy the same config over to a new project.
 For Beginners: Start coding like the pros without having to configure anything.
 
@@ -134,7 +135,7 @@ If you need additional rules or want to turn off specific rules just edit `.esli
 "@myalias": "./src/myaliasfolder",
 ```
 
-This will instruct Next.js to set up a new alias to your specific folder. If you try to import a file with @myalias now it will still throw an error however because we need to tell our IDE that this path actually exists.
+This will instruct Next.js to set up a new alias to your specific folder. If you try to import a file with @myalias now it will still throw an error however because we need to tell our IDE that this path actually exists:
 
 2. Add path in `.tsconfig`
 
@@ -142,16 +143,11 @@ This will instruct Next.js to set up a new alias to your specific folder. If you
 "@myalias/*": ["./src/myaliasfolder/*"]
 ```
 
-
 ## Recommended extensions for VSCode
+
+If you're a beginner and don't know which extensions you need, definitely install these:
 
 1. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Adds error highlighting to VSCode.
 2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-fixes formatting errors everytime you hit save.
 3. [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): Tailwind className suggestions as you type
 4. [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind): Makes sure your tailwind classes have the correct order which makes components easier to read.
-
-This template of the most exciting trends features and gives you a comfortable development environment to get started.
-The reason why it exists is because I absolutely hate setting up the same stack twice. 
-
-most tedious things are usually the easiest ones to implement (once you know what you're doing).
-If you've ever set up an eslint config with auto-formatting and absolute imports for a new project from scratch you probably know the struggle.
