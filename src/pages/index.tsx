@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex justify-center min-h-screen py-24 bg-gradient-to-b from-geist-50 via-geist-50 to-geist-100">
+      <main className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-geist-50 via-geist-50 to-geist-100">
         <div>
           <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
             Next.js
@@ -58,7 +58,6 @@ export default function Home() {
                   </Feature>
                 </FeatureList>
               </div>
-
               <div className="px-4 py-24 space-y-5 text-center place-self-center">
                 <h3 className="text-3xl font-bold">Get it 👇</h3>
 
@@ -78,6 +77,15 @@ export default function Home() {
                 </h2>
               </div>
             </section>
+            <p className="mt-6 text-xs font-medium text-center text-gray-600">
+              Built by{" "}
+              <a
+                className="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:outline-none focus:underline"
+                href="https://twitter.com/agctyz"
+              >
+                @agctyz
+              </a>
+            </p>
           </div>
         </div>
       </main>
@@ -112,19 +120,6 @@ function InfoText({ text }) {
       <CheckIcon className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden" />
       {text}
     </span>
-  );
-}
-
-function DarkModal({ children }) {
-  return (
-    <div
-      className="max-w-4xl p-8 space-y-6 transition-all transform border rounded-lg bg-dark-800 border-dark-900"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-headline"
-    >
-      {children}
-    </div>
   );
 }
 
