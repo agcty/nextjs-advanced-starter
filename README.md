@@ -1,15 +1,15 @@
-# Next.js Advanced Starter
+# Next.js Advanced Starter 🚀
 
 An opinionated starter skeleton with advanced features for Next.js.
 
-Use tailwind css, eslint, prettier & absolute imports instantly.
+Use Tailwind CSS, ESLint, Prettier & absolute imports instantly.
 Easily extendable zero-config template for pros and beginners.
 
 ## Why?
 
 This template aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be starting out and wanting to build webapps like the pros but having to think about configuring your stack just prevents you from using all the cool features technology has to offer in 2020. Especially getting eslint + prettier + absolute imports to work (well) together is super annoying and I believe using these features should be as simple as clicking a button.
+It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be just wanting to build something but needing DAYS for coming up with the initial configuration. Especially getting Eslint + Prettier + absolute imports to work (well) together is super annoying and I believe using these features should be as simple as clicking a button. Als you probably want to style your webapp and there are few better ways than styling it with TailwindCSS.
 
 Go check out the [Features 🎁](#features)!
 
@@ -151,3 +151,10 @@ If you're a beginner and don't know which extensions you need, definitely instal
 2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-fixes formatting errors everytime you hit save.
 3. [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): Tailwind className suggestions as you type
 4. [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind): Makes sure your tailwind classes have the correct order which makes components easier to read.
+
+## Resources
+
+If you're not yet familiar with some of the technologies used in this project here are some resources to help you get started:
+
+[Tailwind CSS course](https://tailwindcss.com/course): Free course by the creators of tailwind. Definitely check it out. It helps you "think" in tailwind. E.g before going through this course I styled my webapps by adding classes from the beginning. However, a much better approach is to 1) semantically structure your html without any classes and 2) to then add styling by using tailwind classes.
+[ESLint config guide](https://eslint.org/docs/user-guide/configuring): If you need to configure ESLint read their documentation (or at least the parts you need). You'll be surprised how much just makes sense after that.
