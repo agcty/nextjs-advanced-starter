@@ -1,4 +1,4 @@
-# Nextjs Advanced Starter
+# Next.js Advanced Starter
 
 An opinionated starter skeleton with advanced features for Next.js.
 
@@ -9,22 +9,15 @@ Easily extendable zero-config template for pros and beginners.
 
 This template aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be starting out and wanting to build webapps like the pros but configuring a stack just prevents you from using all the cool features technology has to offer in 2020.
+It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be starting out and wanting to build webapps like the pros but having to think about configuring your stack just prevents you from using all the cool features technology has to offer in 2020. Especially getting eslint + prettier + absolute imports to work (well) together is super annoying and I believe using these features should be as simple as clicking a button.
 
-TLDR;
-This template combines some of the most exciting trends in web development and just works. Use it as a pro and don't.
-Check out the [Features 🎁](#features)
-
-This template of the most exciting trends features and gives you a comfortable development environment to get started.
-The reason why it exists is because I absolutely hate setting up the same stack twice. Especially getting eslint + prettier + absolute imports to work (well) together is super annoying and I don't any people to be annoyed by it.
-
-most tedious things are usually the easiest ones to implement (once you know what you're doing).
-If you've ever set up an eslint config with auto-formatting and absolute imports for a new project from scratch you probably know the struggle.
-
-For Pros: You don't have to copy the same config over to a new project.
-For Beginners: Start coding like the pros without setting up configs for days.
+Go check out the [Features 🎁](#features)!
 
 ## Who this template is for
+
+**TLDR**
+For Pros: You don't have to copy the same config over to a new project.
+For Beginners: Start coding like the pros without having to configure anything.
 
 If you're a newcomer to Next.js or React and you're interested in the most exciting features in web development, this is a great place to start without worrying about configuring rules, code-formatting, css purging etc. You can figure that out later, just get developing and build things people love.
 
@@ -100,6 +93,31 @@ If you don't need or want this dependency you can safely remove it.
 
 ### Changing the font
 
+1. In src/pages/_app.tsx replace the link tag with your url (can be Google Fonts, Adobe Typekit, etc.)
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+```
+
+2. In tailwind.config.js replace "Inter" with your custom font
+
+```javascript
+extend: {
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+  }
+```
+
+Tip: The font you choose should have at least these weights: 400, 500, 600, 700, 800. You need these weights for the tailwind font classes to have an effect. E.g if you don't include the weight 500, the class "font-medium" won't have any effect.
+
 ### Configuring ESLint rules
 
 ### Adding new absolute import paths
+
+
+
+This template of the most exciting trends features and gives you a comfortable development environment to get started.
+The reason why it exists is because I absolutely hate setting up the same stack twice. 
+
+most tedious things are usually the easiest ones to implement (once you know what you're doing).
+If you've ever set up an eslint config with auto-formatting and absolute imports for a new project from scratch you probably know the struggle.
