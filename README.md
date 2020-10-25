@@ -67,7 +67,9 @@ After going through these steps it should look like this [Demo website.](https:/
 
 ### @tailwindcss/ui
 
-You need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/), it adds new spacing values, improved colors and beautiful shadows and will as [@adamwathan](https://twitter.com/adamwathan) pointed out, it will make its way into the core library soon. Once this happens, the dependency will be removed. ![tailwind ui](https://i.imgur.com/gm83Ydx.png)
+You need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/), it adds new spacing values, improved colors and beautiful shadows and will as [@adamwathan](https://twitter.com/adamwathan) pointed out, it will make its way into the core library soon. Once this happens, the dependency will be removed.
+
+![tailwind ui](https://i.imgur.com/gm83Ydx.png)
 
 ### @tailwindcss/typography
 
