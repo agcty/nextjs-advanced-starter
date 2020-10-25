@@ -91,6 +91,18 @@ If you don't need or want this dependency you can safely remove it.
 
 ## Extending the template
 
+### Config files
+
+| File name             | What it does                                                                                               |
+|-----------------------|------------------------------------------------------------------------------------------------------------|
+| `tsconfig.json`         | TypeScript configuration. Tells IDE which absolute imports exist and works in conjunction with .babelrc    |
+| `.eslintrc.js`          | Config file for finding and fixing problems in code. E.g: No function should be used before it's defined.  |
+| `tailwind.config.js`    | TailwindCSS config. Adds new sizes, shadows, borders etc. to your tailwind classes.                        |
+| `postcss.config.js`     | Tells your project to include TailwindCSS in build chain.                                                  |
+| `prettier.config.js`    | Rules for formatting your code. E.g: indent code 6 spaces instead of 4                                     |
+| `babelrc.js`            | Extends the Next.js babel config and defines absolute imports.                                             |
+| `.vscode/settings.json` | Custom settings for your VSCode workspace. Tells VSCode to auto-format code on save.                       |
+
 ### Changing the font
 
 1. In `src/pages/_app.tsx` replace the link tag with your url (can be Google Fonts, Adobe Typekit, etc.)
@@ -112,9 +124,31 @@ Tip: The font you choose should have at least these weights: 400, 500, 600, 700,
 
 ### Configuring ESLint rules
 
+If you need additional rules or want to turn off specific rules just edit `.eslintrc.js`. Only change the order of plugins and items in the "extends" array if you know what you're doing as this can have unexpected side effects: Items on the bottom ovverride the former items. This is the intended behaviour so you can extend and configure existing rules easily. For example first we add the popular airbnb rules and then have prettier ovverride some of these rules so code formatting doesn't interfere with other rules.
+
 ### Adding new absolute import paths
 
+1. Add a new alias in `.babelrc`
 
+```javascript
+"@myalias": "./src/myaliasfolder",
+```
+
+This will instruct Next.js to set up a new alias to your specific folder. If you try to import a file with @myalias now it will still throw an error however because we need to tell our IDE that this path actually exists.
+
+2. Add path in `.tsconfig`
+
+```javascript
+"@myalias/*": ["./src/myaliasfolder/*"]
+```
+
+
+## Recommended extensions for VSCode
+
+1. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Adds error highlighting to VSCode.
+2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-fixes formatting errors everytime you hit save.
+3. [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): Tailwind className suggestions as you type
+4. [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind): Makes sure your tailwind classes have the correct order which makes components easier to read.
 
 This template of the most exciting trends features and gives you a comfortable development environment to get started.
 The reason why it exists is because I absolutely hate setting up the same stack twice. 
