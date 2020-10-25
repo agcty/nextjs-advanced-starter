@@ -182,4 +182,5 @@ If you're a beginner and don't know which extensions you need, definitely instal
 If you're not yet familiar with some of the technologies used in this project here are some resources to help you get started:
 
 [Tailwind CSS course](https://tailwindcss.com/course): Free course by the creators of tailwind. Definitely check it out. It helps you "think" in tailwind. E.g before going through this course I styled my webapps by adding classes from the beginning. However, a much better approach is to 1) semantically structure your html without any classes and 2) to then add styling by using tailwind classes.
+
 [ESLint config guide](https://eslint.org/docs/user-guide/configuring): If you need to configure ESLint read their documentation (or at least the parts you need). You'll be surprised how much just makes sense after that.
