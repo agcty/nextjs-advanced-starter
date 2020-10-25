@@ -7,9 +7,9 @@ Easily extendable zero-config template for pros and beginners.
 
 ## Why?
 
-This project aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
+This template aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-It feels like there are so many templates and tutorials about configuring stacks out there, that just don't work, no matter what you do. When I started This is the template that **just works**.
+It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be starting out and wanting to build webapps like the pros but configuring a stack just prevents you from using all the cool features technology has to offer in 2020.
 
 TLDR;
 This template combines some of the most exciting trends in web development and just works. Use it as a pro and don't.
@@ -24,13 +24,27 @@ If you've ever set up an eslint config with auto-formatting and absolute imports
 For Pros: You don't have to copy the same config over to a new project.
 For Beginners: Start coding like the pros without setting up configs for days.
 
-## How can I use this?
+## Who this template is for
 
 If you're a newcomer to Next.js or React and you're interested in the most exciting features in web development, this is a great place to start without worrying about configuring rules, code-formatting, css purging etc. You can figure that out later, just get developing and build things people love.
 
 If you're already a pro, this is the base-template for you. It's incredibly easy to extend or reconfigure. It's deliberately kept small so it stays performant while you build on top of it. This is the minimal base-template I wish I've had when I started developing with React.
 
-[Demo website.](https://nextjs-advanced-starter.vercel.app/)
+## How to use
+
+1. Click **"Use Template"** button which will create a new github repo for you automatically
+2. Pull the newly created repo by following the github guide which will be shown after you finish step 1.
+3. Install dependencies and run dev server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+After going through these steps it should look like this [Demo website.](https://nextjs-advanced-starter.vercel.app/)
 
 ## Features
 
@@ -43,10 +57,10 @@ If you're already a pro, this is the base-template for you. It's incredibly easy
   - AirBnB code guidelines + prettier rules
 - Code formatting with Prettier
   - Code is auto-formatted
-  - No config needed (seriously, no config)
+  - No config needed
 - Inter font
   - Really good looking apple-like open source font.
-  - Don't like it? just replace two strings
+  - Don't like it? It's easily [replacable](#changing-the-font)
 - Standardized absolute imports
   - Just import from @components/MyComp instead of ../../components/MyComp
 
@@ -58,27 +72,29 @@ You need to install this package if you use the incredible [TailwindUI component
 
 ### @tailwindcss/typography
 
-A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults. Just add the class "prose" to
+A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults. Just add the class "prose" to your html and content will be styled automatically.
 
-This html
+E.g this html:
 
-```
+```html
 <article class="prose lg:prose-xl">
-  <h1>Garlic bread with cheese: What the science tells us</h1>
+  <h1>How to set up an enterprise Next.js stack</h1>
   <p>
-    For years parents have espoused the health benefits of eating garlic bread with cheese to their
-    children, with the food earning such an iconic status in our culture that kids will often dress
-    up as warm, cheesy loaf for Halloween.
+    Configuring Next.js with TypeScript, ESLint & prettier can become really annoying, especially if you're a beginner and don't know the intricate details of all the moving parts in a web-dev environment. The most important things you have to set up are:
   </p>
-  <p>
-    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-    springing up around the country.
-  </p>
-  <!-- ... -->
+  <ul>
+    <li>A working ESLint config</li>
+    <li>Prettier plugins that auto-format your code</li>
+    <li>Absolute imports</li>
+  </ul>
 </article>
 ```
 
 will be rendered like this:
+
+![prose output](https://i.imgur.com/xJD5Ojv.png)
+
+If you don't need or want this dependency you can safely remove it.
 
 ## Extending the template
 
