@@ -93,7 +93,7 @@ If you don't need or want this dependency you can safely remove it.
 
 ### Changing the font
 
-1. In src/pages/_app.tsx replace the link tag with your url (can be Google Fonts, Adobe Typekit, etc.)
+1. In `src/pages/_app.tsx` replace the link tag with your url (can be Google Fonts, Adobe Typekit, etc.)
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -103,9 +103,9 @@ If you don't need or want this dependency you can safely remove it.
 
 ```javascript
 extend: {
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-  }
+  fontFamily: {
+    sans: ["Inter", ...defaultTheme.fontFamily.sans],
+}
 ```
 
 Tip: The font you choose should have at least these weights: 400, 500, 600, 700, 800. You need these weights for the tailwind font classes to have an effect. E.g if you don't include the weight 500, the class "font-medium" won't have any effect.
