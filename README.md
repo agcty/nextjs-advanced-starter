@@ -8,7 +8,7 @@ Easily extendable zero-config template for pros and beginners.
 ## Why?
 This project aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-I always felt like there are so many templates and tutorials about configuring stacks that just don't work. No matter what you do. This is the template that **just works**.
+It feels like there are so many templates and tutorials about configuring stacks out there, that just don't work, no matter what you do. When I started This is the template that **just works**.
 
 TLDR;
 This template combines some of the most exciting trends in web development and just works. Use it as a pro and don't.
@@ -46,3 +46,14 @@ If you're already a pro, this is the base-template for you. It's incredibly easy
    * Don't like it? just replace two strings
  * Standardized absolute imports
    * Just import from @components/MyComp instead of ../../components/MyComp
+   
+   
+## Explanation why some dependencies are in this template
+### @tailwindcss/ui
+You need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/), it adds new spacing values, improved colors and beautiful shadows and will as [@adamwathan](https://twitter.com/adamwathan) pointed out, it will make its way into the core library soon. Once this happens, the dependency will be removed. ![tailwind ui](https://i.imgur.com/gm83Ydx.png)
+
+
+## Extending the template
+### Changing the font
+### Configuring ESLint rules
+### Adding new absolute import paths
