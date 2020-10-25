@@ -5,6 +5,26 @@ An opinionated starter skeleton with advanced features for Next.js.
 Use Tailwind CSS, ESLint, Prettier & absolute imports instantly.
 Easily extendable zero-config template for pros and beginners.
 
+Check out the [Demo website.](https://nextjs-advanced-starter.vercel.app/)
+
+## Table of Contents
+
+- [Next.js Advanced Starter 🚀](#nextjs-advanced-starter-)
+  - [Why?](#why)
+  - [Features](#features)
+  - [Who this template is for](#who-this-template-is-for)
+  - [How to use](#how-to-use)
+  - [Explanation why some dependencies are in this template](#explanation-why-some-dependencies-are-in-this-template)
+    - [@tailwindcss/ui](#tailwindcssui)
+    - [@tailwindcss/typography](#tailwindcsstypography)
+  - [Extending the template](#extending-the-template)
+    - [Config files](#config-files)
+    - [Changing the font](#changing-the-font)
+    - [Configuring ESLint rules](#configuring-eslint-rules)
+    - [Adding new absolute import paths](#adding-new-absolute-import-paths)
+  - [Recommended extensions for VSCode](#recommended-extensions-for-vscode)
+  - [Resources](#resources)
+
 ## Why?
 
 This template aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
@@ -61,13 +81,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-After going through these steps it should look like this [Demo website.](https://nextjs-advanced-starter.vercel.app/)
-
 ## Explanation why some dependencies are in this template
 
 ### @tailwindcss/ui
 
-You need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/), it adds new spacing values, improved colors and beautiful shadows and will as [@adamwathan](https://twitter.com/adamwathan) pointed out, it will make its way into the core library soon. Once this happens, the dependency will be removed.
+This pacakage adds new spacing values, improved colors and beautiful shadows and as [@adamwathan](https://twitter.com/adamwathan) pointed out, will make its way into the core library soon. Once this happens, this dependency will be removed. The reasons why I included this library are 1) the new colors are slightly more balanced and the added spacing values (e.g 1.5, 2.5) just make sense in a lot of cases. Also you need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/) which I highly recommend you to check out.
 
 ![tailwind ui](https://i.imgur.com/gm83Ydx.png)
 
