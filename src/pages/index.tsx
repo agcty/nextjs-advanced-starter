@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
-            Use Tailwind CSS, ESLint, Prettier & absolute imports instantly.
+            Tailwind CSS 2.0, ESLint & Prettier without a single line of config!
             Easily extendable zero-config template for pros and beginners.
           </h2>
 
@@ -65,7 +65,7 @@ export default function Home() {
                   <Link href="  https://github.com/agcty/nextjs-advanced-starter">
                     <a
                       type="button"
-                      className="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                      className="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
                     >
                       Copy Template from GitHub
                     </a>

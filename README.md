@@ -10,12 +10,13 @@ Check out the [Demo website.](https://nextjs-advanced-starter.vercel.app/)
 ## Table of Contents
 
 - [Next.js Advanced Starter 🚀](#nextjs-advanced-starter-)
+  - [Table of Contents](#table-of-contents)
   - [Why?](#why)
   - [Features](#features)
   - [Who this template is for](#who-this-template-is-for)
   - [How to use](#how-to-use)
   - [Explanation why some dependencies are in this template](#explanation-why-some-dependencies-are-in-this-template)
-    - [@tailwindcss/ui](#tailwindcssui)
+    - [@tailwindcss/forms](#tailwindcssforms)
     - [@tailwindcss/typography](#tailwindcsstypography)
   - [Extending the template](#extending-the-template)
     - [Config files](#config-files)
@@ -37,7 +38,7 @@ Also I absolutely hate having to copy the same config over to a new project ever
 
 ## Features
 
-- Fast design workflow with Tailwind CSS
+- Fast design workflow with Tailwind CSS 2.0
   - write css like the cool kids
   - unused classes are purged automatically = really small css bundle size
 - TypeScript
@@ -83,11 +84,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Explanation why some dependencies are in this template
 
-### @tailwindcss/ui
+### @tailwindcss/forms
 
-This pacakage adds new spacing values, improved colors and beautiful shadows and as [@adamwathan](https://twitter.com/adamwathan) pointed out, will make its way into the core library soon. Once this happens, this dependency will be removed. The reasons why I included this library are 1) the new colors are slightly more balanced and the added spacing values (e.g 1.5, 2.5) just make sense in a lot of cases. Also you need to install this package if you use the incredible [TailwindUI components library](https://tailwindui.com/) which I highly recommend you to check out.
+First party dependency for resetting input styles so you don't have to manually reset like this:
 
-![tailwind ui](https://i.imgur.com/gm83Ydx.png)
+```css
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+```
 
 ### @tailwindcss/typography
 
