@@ -83,9 +83,5 @@ module.exports = {
     ],
   },
   // eslint-disable-next-line global-require
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/ui")],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
