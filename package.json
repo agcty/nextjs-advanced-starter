@@ -1,6 +1,6 @@
 {
   "name": "with-typescript-eslint-jest",
-  "author": "@erikdstock",
+  "author": "@agctyz",
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
@@ -26,9 +26,16 @@
     ]
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.4",
+    "babel-plugin-module-resolver": "^4.1.0",
     "next": "latest",
+    "postcss": "^8.2.5",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.6",
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
@@ -39,8 +46,15 @@
     "@typescript-eslint/parser": "^4.14.2",
     "babel-jest": "^26.6.3",
     "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-babel-module": "^5.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",

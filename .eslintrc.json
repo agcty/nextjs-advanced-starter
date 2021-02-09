@@ -1,14 +1,18 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
+    "airbnb",
+    "airbnb/hooks",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
-    // Uncomment the following lines to enable eslint-config-prettier
-    // Is not enabled right now to avoid issues with the Next.js repo
-    // "prettier",
-    // "prettier/@typescript-eslint"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
   ],
   "env": {
     "es6": true,
@@ -19,9 +23,17 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
     }
   },
   "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/anchor-is-valid": 0,
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
@@ -31,6 +43,7 @@
     "@typescript-eslint/member-delimiter-style": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-var-requires": 0,
+    "no-use-before-define": 0,
     "@typescript-eslint/no-use-before-define": 0,
     "@typescript-eslint/no-unused-vars": [
       2,
