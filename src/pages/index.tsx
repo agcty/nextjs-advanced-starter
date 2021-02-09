@@ -54,6 +54,9 @@ export default function Home() {
                   <Feature main="Absolute imports">
                     Standardized <InfoText text="absolute imports" />
                   </Feature>
+                  <Feature main="Absolute imports">
+                    Ready-to-go <InfoText text="Jest" /> setup
+                  </Feature>
                 </FeatureList>
               </div>
               <div className="px-4 py-24 space-y-5 text-center place-self-center">
