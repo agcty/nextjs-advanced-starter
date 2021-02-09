@@ -109,7 +109,10 @@ E.g this html:
 <article class="prose lg:prose-xl">
   <h1>How to set up an enterprise Next.js stack</h1>
   <p>
-    Configuring Next.js with TypeScript, ESLint & prettier can become really annoying, especially if you're a beginner and don't know the intricate details of all the moving parts in a web-dev environment. The most important things you have to set up are:
+    Configuring Next.js with TypeScript, ESLint & prettier can become really
+    annoying, especially if you're a beginner and don't know the intricate
+    details of all the moving parts in a web-dev environment. The most important
+    things you have to set up are:
   </p>
   <ul>
     <li>A working ESLint config</li>
@@ -129,22 +132,25 @@ If you don't need or want this dependency you can safely remove it.
 
 ### Config files
 
-| File name             | What it does                                                                                               |
-|-----------------------|------------------------------------------------------------------------------------------------------------|
-| `tsconfig.json`         | TypeScript configuration. Tells IDE which absolute imports exist and works in conjunction with .babelrc    |
-| `.eslintrc.js`          | Config file for finding and fixing problems in code. E.g: No function should be used before it's defined.  |
-| `tailwind.config.js`    | TailwindCSS config. Adds new sizes, shadows, borders etc. to your tailwind classes.                        |
-| `postcss.config.js`     | Tells your project to include TailwindCSS in build chain.                                                  |
-| `prettier.config.js`    | Rules for formatting your code. E.g: indent code 6 spaces instead of 4                                     |
-| `babelrc.js`            | Extends the Next.js babel config and defines absolute imports.                                             |
-| `.vscode/settings.json` | Custom settings for your VSCode workspace. Tells VSCode to auto-format code on save.                       |
+| File name               | What it does                                                                                              |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- |
+| `tsconfig.json`         | TypeScript configuration. Tells IDE which absolute imports exist and works in conjunction with .babelrc   |
+| `.eslintrc.js`          | Config file for finding and fixing problems in code. E.g: No function should be used before it's defined. |
+| `tailwind.config.js`    | TailwindCSS config. Adds new sizes, shadows, borders etc. to your tailwind classes.                       |
+| `postcss.config.js`     | Tells your project to include TailwindCSS in build chain.                                                 |
+| `prettier.config.js`    | Rules for formatting your code. E.g: indent code 6 spaces instead of 4                                    |
+| `babelrc.js`            | Extends the Next.js babel config and defines absolute imports.                                            |
+| `.vscode/settings.json` | Custom settings for your VSCode workspace. Tells VSCode to auto-format code on save.                      |
 
 ### Changing the font
 
 1. In `src/pages/_app.tsx` replace the link tag with your url (can be Google Fonts, Adobe Typekit, etc.)
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 2. In tailwind.config.js replace "Inter" with your custom font
