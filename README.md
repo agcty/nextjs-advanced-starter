@@ -135,7 +135,7 @@ If you don't need or want this dependency you can safely remove it.
 | File name               | What it does                                                                                              |
 | ----------------------- | --------------------------------------------------------------------------------------------------------- |
 | `tsconfig.json`         | TypeScript configuration. Tells IDE which absolute imports exist and works in conjunction with .babelrc   |
-| `.eslintrc.js`          | Config file for finding and fixing problems in code. E.g: No function should be used before it's defined. |
+| `.eslintrc.json`          | Config file for finding and fixing problems in code. E.g: No function should be used before it's defined. |
 | `tailwind.config.js`    | TailwindCSS config. Adds new sizes, shadows, borders etc. to your tailwind classes.                       |
 | `postcss.config.js`     | Tells your project to include TailwindCSS in build chain.                                                 |
 | `prettier.config.js`    | Rules for formatting your code. E.g: indent code 6 spaces instead of 4                                    |
