@@ -1,4 +1,3 @@
-import Test from "@components/test"
 import Head from "next/head"
 import Link from "next/link"
 import React from "react"
@@ -24,8 +23,6 @@ export default function Home() {
             <br />
             Advanced Starter
           </h1>
-
-          <Test />
 
           <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
             Tailwind CSS 2.0, ESLint & Prettier without a single line of config!

@@ -2,136 +2,383 @@
 
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="jsx-1276654382 container"
-  >
+  <div>
     <main
-      class="jsx-1276654382"
+      class="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100"
     >
-      <h1
-        class="jsx-1276654382 title"
-      >
-        Welcome to 
-        <a
-          class="jsx-1276654382"
-          href="https://nextjs.org"
+      <div>
+        <h1
+          class="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl"
         >
-          Next.js!
-        </a>
-      </h1>
-      <p
-        class="jsx-1276654382 description"
-      >
-        Get started by editing 
-        <code
-          class="jsx-1276654382"
+          Next.js
+          <br />
+          Advanced Starter
+        </h1>
+        <h2
+          class="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl"
         >
-          pages/index.tsx
-        </code>
-      </p>
-      <button
-        class="jsx-1276654382"
-      >
-        Test Button
-      </button>
-      <div
-        class="jsx-1276654382 grid"
-      >
-        <a
-          class="jsx-1276654382 card"
-          href="https://nextjs.org/docs"
+          Tailwind CSS 2.0, ESLint & Prettier without a single line of config! Easily extendable zero-config template for pros and beginners.
+        </h2>
+        <div
+          class="px-4 sm:px-0"
         >
-          <h3
-            class="jsx-1276654382"
+          <section
+            class="grid w-full grid-cols-1 mt-6 bg-white rounded-lg sm:mt-20 sm:grid-cols-2 sm:w-1000"
+            style="min-height: 350px; box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px 0px;"
           >
-            Documentation →
-          </h3>
+            <div
+              class="flex flex-col justify-center rounded-l-lg bg-gray-50"
+            >
+              <ul
+                class="px-12 py-12 space-y-5"
+              >
+                <li
+                  class="flex items-center"
+                >
+                  <svg
+                    class="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <p
+                    class="hidden ml-3 text-lg text-gray-600 sm:inline"
+                  >
+                    Fast design workflow with 
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      Tailwind CSS
+                    </span>
+                  </p>
+                  <p
+                    class="mx-auto sm:hidden"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      Tailwind CSS
+                    </span>
+                  </p>
+                </li>
+                <li
+                  class="flex items-center"
+                >
+                  <svg
+                    class="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <p
+                    class="hidden ml-3 text-lg text-gray-600 sm:inline"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      TypeScript
+                    </span>
+                     by default
+                  </p>
+                  <p
+                    class="mx-auto sm:hidden"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      TypeScript
+                    </span>
+                  </p>
+                </li>
+                <li
+                  class="flex items-center"
+                >
+                  <svg
+                    class="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <p
+                    class="hidden ml-3 text-lg text-gray-600 sm:inline"
+                  >
+                    Customizable 
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      ESLint config
+                    </span>
+                  </p>
+                  <p
+                    class="mx-auto sm:hidden"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      ESLint config
+                    </span>
+                  </p>
+                </li>
+                <li
+                  class="flex items-center"
+                >
+                  <svg
+                    class="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <p
+                    class="hidden ml-3 text-lg text-gray-600 sm:inline"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      Code formatting
+                    </span>
+                     with Prettier
+                  </p>
+                  <p
+                    class="mx-auto sm:hidden"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      Code formatting
+                    </span>
+                  </p>
+                </li>
+                <li
+                  class="flex items-center"
+                >
+                  <svg
+                    class="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <p
+                    class="hidden ml-3 text-lg text-gray-600 sm:inline"
+                  >
+                    Standardized 
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      absolute imports
+                    </span>
+                  </p>
+                  <p
+                    class="mx-auto sm:hidden"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                    >
+                      <svg
+                        class="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M5 13l4 4L19 7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      Absolute imports
+                    </span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="px-4 py-24 space-y-5 text-center place-self-center"
+            >
+              <h3
+                class="text-3xl font-bold"
+              >
+                Get it 👇
+              </h3>
+              <span
+                class="inline-flex rounded-md shadow-sm"
+              >
+                <a
+                  class="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
+                  href="  https://github.com/agcty/nextjs-advanced-starter"
+                  type="button"
+                >
+                  Copy Template from GitHub
+                </a>
+              </span>
+            </div>
+          </section>
           <p
-            class="jsx-1276654382"
+            class="mt-6 text-xs font-medium text-center text-gray-600"
           >
-            Find in-depth information about Next.js features and API.
+            Built by 
+            <a
+              class="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:outline-none focus:underline"
+              href="https://twitter.com/agctyz"
+            >
+              @agctyz
+            </a>
           </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://nextjs.org/learn"
-        >
-          <h3
-            class="jsx-1276654382"
-          >
-            Learn →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://github.com/vercel/next.js/tree/master/examples"
-        >
-          <h3
-            class="jsx-1276654382"
-          >
-            Examples →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          <h3
-            class="jsx-1276654382"
-          >
-            Deploy →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
+        </div>
       </div>
     </main>
-    <footer
-      class="jsx-1276654382"
-    >
-      <a
-        class="jsx-1276654382"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Powered by 
-        <div
-          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
-        >
-          <div
-            style="box-sizing: border-box; display: block; max-width: 100%;"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              role="presentation"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
-            />
-          </div>
-          <img
-            alt="Vercel Logo"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-          />
-        </div>
-      </a>
-    </footer>
   </div>
 </DocumentFragment>
 `;
