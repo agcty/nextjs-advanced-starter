@@ -60,7 +60,7 @@ export default function Home() {
                 <h3 className="text-3xl font-bold">Get it 👇</h3>
 
                 <span className="inline-flex rounded-md shadow-sm">
-                  <Link href="  https://github.com/agcty/nextjs-advanced-starter">
+                  <Link href="https://github.com/agcty/nextjs-advanced-starter">
                     <a
                       type="button"
                       className="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
