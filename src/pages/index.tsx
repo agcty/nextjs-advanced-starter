@@ -66,6 +66,7 @@ export default function Home() {
                   </Feature>
                 </FeatureList>
               </div>
+
               <div className="px-4 py-24 space-y-5 text-center place-self-center">
                 <h3 className="text-3xl font-bold">Get it 👇</h3>
 
