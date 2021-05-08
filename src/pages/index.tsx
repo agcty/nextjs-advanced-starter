@@ -43,18 +43,23 @@ export default function Home() {
                   <Feature main="Tailwind CSS">
                     Fast design workflow with <InfoText text="Tailwind CSS" />
                   </Feature>
+
                   <Feature main="TypeScript">
                     <InfoText text="TypeScript" /> by default
                   </Feature>
+
                   <Feature main="ESLint config">
                     Customizable <InfoText text="ESLint config" />
                   </Feature>
+
                   <Feature main="Code formatting">
                     <InfoText text="Code formatting" /> with Prettier
                   </Feature>
+
                   <Feature main="Absolute imports">
                     Standardized <InfoText text="absolute imports" />
                   </Feature>
+
                   <Feature main="Absolute imports">
                     Ready-to-go <InfoText text="Jest" /> setup
                   </Feature>
