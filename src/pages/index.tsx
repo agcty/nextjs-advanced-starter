@@ -8,6 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Next.js advanced start template.</title>
+
         <meta
           name="description"
           content="Use tailwind css, eslint, prettier & absolute imports instantly.
