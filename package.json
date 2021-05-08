@@ -4,6 +4,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
