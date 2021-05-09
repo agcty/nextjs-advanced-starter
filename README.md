@@ -30,9 +30,9 @@ Check out the [Demo website.](https://nextjs-advanced-starter.vercel.app/)
 
 This template aims to provide a minimal well-thought-out base for building advanced Next.js powered websites.
 
-It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be just wanting to build something but needing DAYS for coming up with the initial configuration. Especially getting Eslint + Prettier + absolute imports to work (well) together is super annoying and I believe using these features should be as simple as clicking a button. Als you probably want to style your webapp and there are few better ways than styling it with Tailwind CSS.
+It feels like there are so many templates and tutorials about configuring stacks out there that just don't work, no matter what you do. This is the template that **just works**. I know how frustrating it can be just wanting to build something but needing DAYS for coming up with the initial configuration. Especially getting Eslint + Prettier + absolute imports to work (well) together is super annoying and I believe using these features should be as simple as clicking a button. Also you probably want to style your webapp and there are few better ways than styling it with Tailwind CSS.
 
-Also I absolutely hate having to copy the same config over to a new project everytime and I don't really want to use existing templates because there always seems to be something wrong with them. Either the config is weird or the maintainers are not transparent enough with the features offered.
+The reason why I created this template in the first place is because I absolutely hate having to copy the same config over to a new project everytime and I don't really want to use existing templates because there always seems to be something wrong with them. Either the config is weird or the maintainers are not transparent with features.
 
 **Inviting you to collaborate** That being said I wholeheartedly invite you to critizise this template from every angle. If there's something wrong with ESLint, if prettier doesn't work as expected, if there's a new version of React or if the README is not transparent enough please don't hesitate to open an issue or (even better) a pull request. I've had enough with templates that don't work.
 
@@ -50,7 +50,7 @@ Also I absolutely hate having to copy the same config over to a new project ever
 - Code formatting with Prettier
   - Code is auto-formatted on save
 - Inter font
-  - Really good looking apple-like open source font.
+  - Nice looking apple-like open source font.
   - Don't like it? It's easily [replacable](#changing-the-font)
 - Standardized absolute imports
   - Import from @components/MyComp instead of ../../components/MyComp
@@ -161,6 +161,8 @@ extend: {
     sans: ["Inter", ...defaultTheme.fontFamily.sans],
 }
 ```
+
+As of Next 10.0.2 google fonts are optimized automatically: https://nextjs.org/blog/next-10-2#automatic-webfont-optimization
 
 Tip: The font you choose should have at least these weights: 400, 500, 600, 700, 800. You need these weights for the tailwind font classes to have an effect. E.g if you don't include the weight 500, the class "font-medium" won't have any effect.
 
