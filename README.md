@@ -34,7 +34,8 @@ It feels like there are so many templates and tutorials about configuring stacks
 
 The reason why I created this template in the first place is because I absolutely hate having to copy the same config over to a new project everytime and I don't really want to use existing templates because there always seems to be something wrong with them. Either the config is weird or the maintainers are not transparent with features.
 
-**Inviting you to collaborate** That being said I wholeheartedly invite you to critizise this template from every angle. If there's something wrong with ESLint, if prettier doesn't work as expected, if there's a new version of React or if the README is not transparent enough please don't hesitate to open an issue or (even better) a pull request. I've had enough with templates that don't work.
+**Inviting you to collaborate** 
+That being said I invite you to leave your critique about this template. If there's something wrong with ESLint, if prettier doesn't work as expected, if there's a new version of React or if the README is not transparent enough please don't hesitate to open an issue or (even better) a pull request. I've had enough with templates that don't work.
 
 ## Features
 
