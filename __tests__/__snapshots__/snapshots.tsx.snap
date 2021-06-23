@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main
+    className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100"
+  >
+    <div>
+      <h1
+        className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl"
+      >
+        Next.js
+        <br />
+        Advanced Starter
+      </h1>
+      <h2
+        className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl"
+      >
+        Tailwind CSS 2.0, ESLint & Prettier without a single line of config! Easily extendable zero-config template for pros and beginners.
+      </h2>
+      <div>
+        Test
+      </div>
+      <div
+        className="px-4 sm:px-0"
+      >
+        <section
+          className="w-full mt-6 bg-white rounded-lg grid grid-cols-1 sm:mt-20 sm:grid-cols-2 sm:w-1000"
+          style={
+            Object {
+              "boxShadow": "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
+              "minHeight": "350px",
+            }
+          }
+        >
+          <div
+            className="flex flex-col justify-center rounded-l-lg bg-gray-50"
+          >
+            <ul
+              className="px-12 py-12 space-y-5"
+            >
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  Fast design workflow with 
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Tailwind CSS
+                  </span>
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Tailwind CSS
+                  </span>
+                </p>
+              </li>
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    TypeScript
+                  </span>
+                   by default
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    TypeScript
+                  </span>
+                </p>
+              </li>
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  Customizable 
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    ESLint config
+                  </span>
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    ESLint config
+                  </span>
+                </p>
+              </li>
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Code formatting
+                  </span>
+                   with Prettier
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Code formatting
+                  </span>
+                </p>
+              </li>
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  Standardized 
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    absolute imports
+                  </span>
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Absolute imports
+                  </span>
+                </p>
+              </li>
+              <li
+                className="flex items-center"
+              >
+                <svg
+                  className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5 13l4 4L19 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                  />
+                </svg>
+                <p
+                  className="hidden ml-3 text-lg text-gray-600 sm:inline"
+                >
+                  Ready-to-go 
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Jest
+                  </span>
+                   setup
+                </p>
+                <p
+                  className="mx-auto sm:hidden"
+                >
+                  <span
+                    className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md"
+                  >
+                    <svg
+                      className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M5 13l4 4L19 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </svg>
+                    Absolute imports
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="px-4 py-24 text-center space-y-5 place-self-center"
+          >
+            <h3
+              className="text-3xl font-bold"
+            >
+              Get it 👇
+            </h3>
+            <span
+              className="inline-flex rounded-md shadow-sm"
+            >
+              <a
+                className="inline-flex items-center px-4 py-4 font-medium text-white bg-blue-600 border border-transparent leading-6 transition duration-150 ease-in-out rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
+                href="https://github.com/agcty/nextjs-advanced-starter"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                type="button"
+              >
+                Copy Template from GitHub
+              </a>
+            </span>
+          </div>
+        </section>
+        <p
+          className="mt-6 text-xs font-medium text-center text-gray-600"
+        >
+          Built by
+           
+          <a
+            className="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:outline-none focus:underline"
+            href="https://twitter.com/agctyz"
+          >
+            @agctyz
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+`;
