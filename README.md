@@ -173,19 +173,16 @@ If you need additional rules or want to turn off specific rules just edit `.esli
 
 ### Adding new absolute import paths
 
-1. Add a new alias in `.babelrc`
-
-```javascript
-"@myalias": "./src/myaliasfolder",
-```
 
 This will instruct Next.js to set up a new alias to your specific folder. If you try to import a file with @myalias now it will still throw an error however because we need to tell our IDE that this path actually exists:
 
-2. Add path in `.tsconfig`
+Add path in `.tsconfig`
 
 ```javascript
 "@myalias/*": ["./src/myaliasfolder/*"]
 ```
+
+That's it! Nextjs 11 now automatically sets up babel and everything else and just works. In previous releases you had to manually configure babel as well.
 
 ## Recommended extensions for VSCode
 
