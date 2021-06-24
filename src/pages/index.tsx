@@ -1,6 +1,5 @@
 import React from "react"
 
-import Test from "@components/Test"
 import Head from "next/head"
 import Link from "next/link"
 
@@ -31,8 +30,6 @@ export default function Home() {
             Tailwind CSS 2.0, ESLint & Prettier without a single line of config!
             Easily extendable zero-config template for pros and beginners.
           </h2>
-
-          <Test />
 
           <div className="px-4 sm:px-0">
             <section
