@@ -33,7 +33,7 @@ export default function Home() {
 
           <div className="px-4 sm:px-0">
             <section
-              className="grid w-full grid-cols-1 mt-6 bg-white rounded-lg sm:mt-20 sm:grid-cols-2 sm:w-1000"
+              className="w-full mt-6 bg-white rounded-lg grid grid-cols-1 sm:mt-20 sm:grid-cols-2 sm:w-1000"
               style={{
                 minHeight: "350px",
                 boxShadow: "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
@@ -67,14 +67,14 @@ export default function Home() {
                 </FeatureList>
               </div>
 
-              <div className="px-4 py-24 space-y-5 text-center place-self-center">
+              <div className="px-4 py-24 text-center space-y-5 place-self-center">
                 <h3 className="text-3xl font-bold">Get it 👇</h3>
 
                 <span className="inline-flex rounded-md shadow-sm">
                   <Link href="https://github.com/agcty/nextjs-advanced-starter">
                     <a
                       type="button"
-                      className="inline-flex items-center px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
+                      className="inline-flex items-center px-4 py-4 font-medium text-white bg-blue-600 border border-transparent leading-6 transition duration-150 ease-in-out rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
                     >
                       Copy Template from GitHub
                     </a>

@@ -1,19 +1,21 @@
 module.exports = {
-  roots: ["<rootDir>"],
-  modulePaths: ["<rootDir>"],
-  moduleFileExtensions: ["ts", "tsx", "js", "json", "jsx"],
-  testPathIgnorePatterns: ["<rootDir>[/\\\\](node_modules|.next)[/\\\\]"],
-  transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"],
+  collectCoverageFrom: [
+    "**/*.{js,jsx,ts,tsx}",
+    "!**/*.d.ts",
+    "!**/node_modules/**",
+  ],
+  setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
+  testPathIgnorePatterns: ["/node_modules/", "/.next/"],
   transform: {
-    "^.+\\.(ts|tsx)$": "babel-jest",
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
   },
-  watchPlugins: [
-    "jest-watch-typeahead/filename",
-    "jest-watch-typeahead/testname",
+  transformIgnorePatterns: [
+    "/node_modules/",
+    "^.+\\.module\\.(css|sass|scss)$",
   ],
   moduleNameMapper: {
-    "^@components(.*)$": "<rootDir>/src/components$1",
-    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-    "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+    "@(components.*)$": "<rootDir>/src/$1",
   },
 }
