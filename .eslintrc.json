@@ -1,7 +1,6 @@
 {
   "plugins": ["jest-dom", "unused-imports", "prettier"],
   "extends": [
-    "next",
     "next/core-web-vitals",
     "plugin:jest-dom/recommended",
     "plugin:tailwind/recommended",
