@@ -33,9 +33,8 @@ export default function Home() {
 
           <div className="px-4 sm:px-0">
             <section
-              className="w-full mt-6 bg-white rounded-lg grid grid-cols-1 sm:mt-20 sm:grid-cols-2 sm:w-1000"
+              className="w-full mt-6 bg-white rounded-lg grid grid-cols-1 sm:mt-20 sm:grid-cols-2 sm:min-w-[1000px] min-h-[350px]"
               style={{
-                minHeight: "350px",
                 boxShadow: "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
               }}
             >

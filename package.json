@@ -14,34 +14,35 @@
     "test-all": "yarn lint && yarn type-check && yarn test"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.4",
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.3.7",
-    "next": "12.0.2",
-    "postcss": "^8.3.11",
+    "next": "12.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.42.1",
-    "tailwindcss": "^2.2.19"
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.33",
-    "babel-jest": "^27.3.1",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^12.0.2",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "autoprefixer": "^10.4.0",
+    "babel-jest": "^27.4.4",
+    "eslint": "^8.4.1",
+    "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest-dom": "^3.9.2",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-tailwind": "^0.2.1",
-    "eslint-plugin-unused-imports": "^1.1.5",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.2.5",
-    "prettier": "^2.4.1",
+    "jest": "^27.4.4",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
     "react-test-renderer": "^17.0.2",
-    "typescript": "^4.4.3"
+    "tailwindcss": "^3.0.1",
+    "typescript": "^4.5.3"
   }
 }
