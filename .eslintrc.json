@@ -1,5 +1,5 @@
 {
-  "plugins": ["jest-dom", "unused-imports", "prettier"],
+  "plugins": ["testing-library", "unused-imports", "prettier"],
   "extends": [
     "next/core-web-vitals",
     "plugin:jest-dom/recommended",
