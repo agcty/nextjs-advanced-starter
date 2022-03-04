@@ -47,7 +47,6 @@ That being said I invite you to leave your critique about this template. If ther
   - drastically reduces errors
   - #1 must have in any web-dev project
 - Customizable ESLint config
-  - AirBnB code guidelines + prettier rules
 - Code formatting with Prettier
   - Code is auto-formatted on save
 - Inter font
@@ -140,7 +139,6 @@ If you don't need or want this dependency you can safely remove it.
 | `tailwind.config.js`    | TailwindCSS config. Adds new sizes, shadows, borders etc. to your tailwind classes.                       |
 | `postcss.config.js`     | Tells your project to include TailwindCSS in build chain.                                                 |
 | `prettier.config.js`    | Rules for formatting your code. E.g: indent code 6 spaces instead of 4                                    |
-| `babelrc.js`            | Extends the Next.js babel config and defines absolute imports.                                            |
 | `.vscode/settings.json` | Custom settings for your VSCode workspace. Tells VSCode to auto-format code on save.                      |
 
 ### Changing the font
@@ -169,7 +167,7 @@ Tip: The font you choose should have at least these weights: 400, 500, 600, 700,
 
 ### Configuring ESLint rules
 
-If you need additional rules or want to turn off specific rules just edit `.eslintrc.js`. Only change the order of plugins and items in the "extends" array if you know what you're doing as this can have unexpected side effects: Items on the bottom ovverride the former items. This is the intended behaviour so you can extend and configure existing rules easily. For example first we add the popular airbnb rules and then have prettier ovverride some of these rules so code formatting doesn't interfere with other rules.
+If you need additional rules or want to turn off specific rules just edit `.eslintrc.js`. Only change the order of plugins and items in the "extends" array if you know what you're doing as this can have unexpected side effects: Items lower down the list override previous extensions. This is the intended behaviour so you can extend and configure existing rules easily.
 
 ### Adding new absolute import paths
 
