@@ -18,22 +18,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex justify-center min-h-screen py-20 bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100">
+      <main className="flex min-h-screen justify-center bg-gradient-to-b from-gray-50 via-gray-50 to-gray-100 py-20">
         <div>
-          <h1 className="px-5 text-4xl font-bold leading-tight tracking-tight text-center sm:mt-4 sm:text-6xl">
+          <h1 className="px-5 text-center text-4xl font-bold leading-tight tracking-tight sm:mt-4 sm:text-6xl">
             Next.js
             <br />
             Advanced Starter
           </h1>
 
-          <h2 className="max-w-4xl px-10 mx-auto mt-8 text-base tracking-tight text-center text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
+          <h2 className="mx-auto mt-8 max-w-4xl px-10 text-center text-base tracking-tight text-gray-600 sm:text-2xl md:mt-5 md:text-2xl">
             Tailwind CSS 3.0, ESLint & Prettier without a single line of config!
             Easily extendable zero-config template for pros and beginners.
           </h2>
 
           <div className="px-4 sm:px-0">
             <section
-              className="w-full mt-6 bg-white rounded-lg grid grid-cols-1 sm:mt-20 sm:grid-cols-2 sm:min-w-[1000px] min-h-[350px]"
+              className="mt-6 grid min-h-[350px] w-full grid-cols-1 rounded-lg bg-white sm:mt-20 sm:min-w-[1000px] sm:grid-cols-2"
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.12) 0px 30px 60px 0px",
               }}
@@ -66,14 +66,14 @@ export default function Home() {
                 </FeatureList>
               </div>
 
-              <div className="px-4 py-24 text-center space-y-5 place-self-center">
+              <div className="space-y-5 place-self-center px-4 py-24 text-center">
                 <h3 className="text-3xl font-bold">Get it 👇</h3>
 
                 <span className="inline-flex rounded-md shadow-sm">
                   <Link href="https://github.com/agcty/nextjs-advanced-starter">
                     <a
                       type="button"
-                      className="inline-flex items-center px-4 py-4 font-medium text-white bg-blue-600 border border-transparent leading-6 transition duration-150 ease-in-out rounded-md sm:px-10 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-400 active:bg-blue-700 focus:ring-4"
+                      className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-4 font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-400 active:bg-blue-700 sm:px-10"
                     >
                       Copy Template from GitHub
                     </a>
@@ -81,10 +81,10 @@ export default function Home() {
                 </span>
               </div>
             </section>
-            <p className="mt-6 text-xs font-medium text-center text-gray-600">
+            <p className="mt-6 text-center text-xs font-medium text-gray-600">
               Built by{" "}
               <a
-                className="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:outline-none focus:underline"
+                className="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:underline focus:outline-none"
                 href="https://twitter.com/agctyz"
               >
                 @agctyz
@@ -102,14 +102,14 @@ interface FeatureListProps {
 }
 
 function FeatureList({ children }: FeatureListProps) {
-  return <ul className="px-12 py-12 space-y-5">{children}</ul>
+  return <ul className="space-y-5 px-12 py-12">{children}</ul>
 }
 
 function Feature({ children, main }) {
   return (
     <li className="flex items-center">
-      <CheckIcon className="flex-shrink-0 hidden w-5 h-5 p-1 text-gray-100 bg-blue-600 rounded-full sm:inline hiddden" />
-      <p className="hidden ml-3 text-lg text-gray-600 sm:inline">{children}</p>
+      <CheckIcon className="hiddden hidden h-5 w-5 flex-shrink-0 rounded-full bg-blue-600 p-1 text-gray-100 sm:inline" />
+      <p className="ml-3 hidden text-lg text-gray-600 sm:inline">{children}</p>
 
       <p className="mx-auto sm:hidden">
         <InfoText text={main} />
@@ -120,8 +120,8 @@ function Feature({ children, main }) {
 
 function InfoText({ text }) {
   return (
-    <span className="inline-flex items-center px-3 py-2 font-medium text-gray-700 bg-gray-100 rounded-md">
-      <CheckIcon className="inline-flex flex-shrink-0 w-5 h-5 p-1 mr-3 text-gray-100 bg-blue-600 rounded-full sm:hidden" />
+    <span className="inline-flex items-center rounded-md bg-gray-100 px-3 py-2 font-medium text-gray-700">
+      <CheckIcon className="mr-3 inline-flex h-5 w-5 flex-shrink-0 rounded-full bg-blue-600 p-1 text-gray-100 sm:hidden" />
       {text}
     </span>
   )
