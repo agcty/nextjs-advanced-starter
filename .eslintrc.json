@@ -2,16 +2,8 @@
   "plugins": ["testing-library", "unused-imports", "prettier"],
   "extends": [
     "next/core-web-vitals",
-    "plugin:jest-dom/recommended",
-    "plugin:tailwind/recommended",
     "plugin:prettier/recommended"
   ],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "jest": true,
-    "node": true
-  },
   "rules": {
     "no-unused-vars": "off",
     "react/require-default-props": 0,
