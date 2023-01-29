@@ -1,3 +1,5 @@
+**Notic**: While Next.js remains a great option, I'd recommend checking out [Remix](https://github.com/remix-run/remix). Since I've started using it, I've been able to build production-ready apps **10 times faster**. No kidding. I don't say this lightly, I used to love Next.js (and still do) and actually tried to convince people that Next is better than Remix for various reasons. But on a mission to become a better developer, I've started looking into other frameworks and keep an open mind. 2023 is an especially exciting year for web developers as more and more edge-native technologies pop up. If you're serious about web development, I'd highly recommend trying other frameworks.
+
 # Next.js Advanced Starter 🚀
 
 An opinionated starter skeleton with advanced features for Next.js.
